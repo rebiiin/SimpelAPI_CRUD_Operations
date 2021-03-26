@@ -37,7 +37,7 @@ namespace SimpelAPI
             });
 
 
-            services.AddDbContext<SimpleAPI_DBContext>(options => options.UseSqlServer("Data Source=REBIN-PC;Initial Catalog=SimpleAPI_DB;Integrated Security=True"));
+            services.AddDbContext<SimpleAPI_DBContext>(options => options.UseSqlServer("Data Source=PC;Initial Catalog=SimpleAPI_DB;Integrated Security=True"));
 
 
             services.AddScoped<IRepository, ProductRepository>();
