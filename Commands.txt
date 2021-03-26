@@ -1,0 +1,15 @@
+
+
+
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.4
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.4
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.4
+
+dotnet ef dbcontext scaffold "Server=.\;Database=SimpleAPI_DB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model
+
+
+
+
+
